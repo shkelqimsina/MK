@@ -8,7 +8,7 @@ import sys
 def main():
     """Run administrative tasks."""
     os.environ.setdefault(
-        "DJANGO_SETTINGS_MODULE", "django_react_starter.settings.development"
+        "DJANGO_SETTINGS_MODULE", "MK.settings.development"
     )
     try:
         # Django

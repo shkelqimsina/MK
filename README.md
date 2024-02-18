@@ -1,9 +1,10 @@
-# Django React Starter
+# Mëso Kur'an
 
 Django-React starter with Docker support for fast and easy web development.
 
-- [Getting started](#getting-started)
-- [Features](#features)
+- [Mëso Kur'an](#mëso-kuran)
+  - [Getting started](#getting-started)
+  - [Features](#features)
 
 ## Getting started
 

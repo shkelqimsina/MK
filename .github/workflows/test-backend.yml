@@ -13,9 +13,9 @@ jobs:
       postgres:
         image: postgis/postgis:16-3.4-alpine
         env:
-          POSTGRES_DB: django_react_starter
-          POSTGRES_USER: django_react_starter
-          POSTGRES_PASSWORD: django_react_starter
+          POSTGRES_DB: MK_DB
+          POSTGRES_USER: MK_User
+          POSTGRES_PASSWORD: MK_Password
         ports:
           - 5432:5432
         options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 5
@@ -39,10 +39,10 @@ jobs:
         env:
           POSTGRES_HOST: localhost
           POSTGRES_PORT: 5432
-          POSTGRES_USER: django_react_starter
-          POSTGRES_PASSWORD: django_react_starter
-          POSTGRES_DB: django_react_starter
+          POSTGRES_USER: MK_User
+          POSTGRES_PASSWORD: MK_Password
+          POSTGRES_DB: MK_DB
         run: |
-          python manage.py collectstatic --noinput --settings=django_react_starter.settings.test
-          coverage run --source='.' manage.py test --settings=django_react_starter.settings.test
+          python manage.py collectstatic --noinput --settings=MK.settings.test
+          coverage run --source='.' manage.py test --settings=MK.settings.test
           coverage report --fail-under=80

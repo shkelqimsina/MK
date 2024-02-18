@@ -13,5 +13,5 @@ else
     echo "[run-scheduler] Starting scheduler in 30 seconds..."
     sleep 30
     echo "[run-scheduler] Starting scheduler"
-    python manage.py startscheduler --settings=django_react_starter.settings.production
+    python manage.py startscheduler --settings=MK.settings.production
 fi

@@ -1,20 +1,21 @@
-# Django React Starter
+# Mëso Kur'an
 
-- [Structure](#structure)
-- [Getting started](#getting-started)
-  - [Pre-requisites](#pre-requisites)
-  - [Installation](#installation)
-- [Running the app](#running-the-app)
-  - [How it works](#how-it-works)
-  - [Running Django commands](#running-django-commands)
-- [QA](#qa)
-  - [Using pre-commit hooks](#using-pre-commit-hooks)
-  - [GitHub Actions](#github-actions)
-- [Available URLs](#available-urls)
-- [Deployment](#deployment)
-  - [Summary](#summary)
-  - [Deploying for the first time](#deploying-for-the-first-time)
-- [Made by JKDev](#made-by-jkdev)
+- [Mëso Kur'an](#mëso-kuran)
+  - [Structure](#structure)
+  - [Getting started](#getting-started)
+    - [Pre-requisites](#pre-requisites)
+    - [Installation](#installation)
+  - [Running the app](#running-the-app)
+    - [How it works](#how-it-works)
+    - [Running Django commands](#running-django-commands)
+  - [QA](#qa)
+    - [Using pre-commit hooks](#using-pre-commit-hooks)
+    - [GitHub Actions](#github-actions)
+  - [Available URLs](#available-urls)
+  - [Deployment](#deployment)
+    - [Summary](#summary)
+    - [Deploying for the first time](#deploying-for-the-first-time)
+  - [Made by JKDev](#made-by-jkdev)
 
 ## Structure
 

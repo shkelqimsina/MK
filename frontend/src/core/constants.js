@@ -1,3 +1,3 @@
-const csrfTokenCookieName = 'django_react_starter-csrftoken';
+const csrfTokenCookieName = 'MK-csrftoken';
 
 export default csrfTokenCookieName;

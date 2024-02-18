@@ -38,7 +38,7 @@ const LoginPage = () => {
       <Col span={24}>
         <Text italic>
           {/* eslint-disable-next-line react/no-unescaped-entities */}
-          Bienvenue sur le site de Django React Starter. Veuillez-vous connecter
+          Bienvenue sur le site de Mëso Kur'an. Veuillez-vous connecter
           pour continuer. Pour créer un compte, merci de contacter un
           administrateur.
         </Text>

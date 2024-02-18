@@ -7,9 +7,9 @@ python wait_for_db.py "run-app"
 
 # Choose settings
 if [[ "$RUN_AS_DEV_SERVER" == 1 ]]; then
-  SETTINGS=django_react_starter.settings.development
+  SETTINGS=MK.settings.development
 else
-  SETTINGS=django_react_starter.settings.production
+  SETTINGS=MK.settings.production
 fi
 
 # Setup the app
@@ -23,7 +23,7 @@ if [[ "$RUN_AS_DEV_SERVER" == 1 ]]; then
   python manage.py runserver 0.0.0.0:8000 --settings=$SETTINGS
 else
   echo "[run-app] Running app in production mode"
-  gunicorn django_react_starter.wsgi:application \
+  gunicorn MK.wsgi:application \
     --bind=:${PORT:-8000} \
     --workers=${GUNICORN_WORKERS:-4}
 fi

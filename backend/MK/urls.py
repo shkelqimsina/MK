@@ -46,5 +46,5 @@ if settings.ENVIRONMENT in ["development", "staging", "test"]:
 # Admin config
 admin.site.site_header = mark_safe("<strong>Interface d'administration</strong>")
 admin.site.index_title = (
-    "Bienvenue sur l'interface d'administration de Django React Starter"
+    "Bienvenue sur l'interface d'administration de Mëso Kur'an"
 )

@@ -2,7 +2,7 @@
 omit =
     # Django
     manage.py
-    django_react_starter/*
+    MK/*
     */__init__.py
     */migrations/*
     */tests/*

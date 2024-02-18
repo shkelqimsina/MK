@@ -2,8 +2,8 @@ version: '3'
 
 services:
   api:
-    image: django_react_starter_api
-    container_name: django_react_starter_api
+    image: MK_api
+    container_name: MK_api
     build:
       context: .
       dockerfile: ./Dockerfile
@@ -12,7 +12,7 @@ services:
     depends_on:
       - postgres
     networks:
-      - django_react_starter_network
+      - MK_network
     ports:
       - '8000:8000'
     volumes:
@@ -20,18 +20,18 @@ services:
 
   front:
     image: node:20.11.1
-    container_name: django_react_starter_front
+    container_name: MK_front
     working_dir: /app
     command: bash -c "yarn install && yarn start --host"
     networks:
-      - django_react_starter_network
+      - MK_network
     ports:
       - '3000:3000'
     volumes:
       - ./frontend:/app
 
   postgres:
-    container_name: django_react_starter_postgres
+    container_name: MK_postgres
     image: postgis/postgis:16-3.4-alpine
     env_file:
       - ./backend/.env
@@ -40,12 +40,12 @@ services:
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
     networks:
-      - django_react_starter_network
+      - MK_network
     ports:
       - '5432:5432'
     volumes:
       - ./data/postgres:/var/lib/postgresql/data
 
 networks:
-  django_react_starter_network:
+  MK_network:
     driver: bridge
