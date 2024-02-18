@@ -8,7 +8,7 @@ env_file='.env'
 opts=
 
 run:
-	@docker exec -it MK_api bash -c "\
+	@docker exec -it mk_api bash -c "\
 		cd backend && \
 		source $(env_file) && \
 		python manage.py $(cmd) \
@@ -27,7 +27,7 @@ shell:
 	@$(MAKE) -s run cmd=shell
 
 coverage:
-	@docker exec -it MK_api bash -c "\
+	@docker exec -it mk_api bash -c "\
 		cd backend && \
 		source .env.test && \
 		coverage run --source='.' manage.py test && \

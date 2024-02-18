@@ -2,8 +2,8 @@ version: '3'
 
 services:
   api:
-    image: MK_api
-    container_name: MK_api
+    image: mk_api
+    container_name: mk_api
     build:
       context: .
       dockerfile: ./Dockerfile
